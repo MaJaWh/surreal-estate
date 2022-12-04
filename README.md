@@ -4,7 +4,7 @@
 [![LastCommit][commit-badge]][commit-url]
 
 <!-- PROJECT LOGO -->
-<h3 align="center">React Technical Test</h3>
+<h3 align="center">Surreal Estate</h3>
 
   <p align="center">
     <br />
