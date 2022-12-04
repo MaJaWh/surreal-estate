@@ -14,3 +14,14 @@ test('displays a success message', () => {
 
   expect(getByText(/Success/).textContent).toBe('Success!!!!');
 });
+
+test('does not render an error or a success message if message props is empty', () => {
+  const { asFragment } = render(<Alert message="" />);
+  const alert = asFragment();
+  expect(alert).toMatchSnapshot();
+});
+
+test('renders an error message when there is no response from the server', () => {
+  const { getByText, asFragment } = render(<Alert message="Error!" />);
+  expect(asFragment()).toMatchSnapshot();
+});
